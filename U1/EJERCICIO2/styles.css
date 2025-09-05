@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    font-family: Helvetica;
+    font-size: 1em;
+    line-height: 1.5em; /*Interlineado*/
+    color: #333
+}
+.con_margen{
+    padding: 10px;
+}
+.contenedor_conversaciones{
+    width: 80%;
+    margin-bottom: 50px;
+}
+.contenedor_canales{
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.encabezado_seccion{
+    padding-bottom: 20px;
+    font-family: 'Tahoma';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.titulo_seccion{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 1em;
+}
+
+.parrafos{
+    
+}
