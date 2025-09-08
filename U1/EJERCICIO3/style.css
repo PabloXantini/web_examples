@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.con-margen {
+    padding: 10px;
+}
+
+.fondo-gris{
+    background-color: #CCC;
+    width: 100%;
+}
+
+.contenedor-1 {
+    border: 2px red solid;
+    box-sizing: border-box;
+}
+
+.contenedor-2 {
+    border: 2px red solid;
+}
+
+.con-ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    border: 1px red solid;
+    width: 400px;
+    /* Este atributo centra la caja que lo contiene */
+    margin: auto;
+    /* Este atrbuto centra el texto (contenido) */
+    text-align: center;
+}
+
+.parrafo {
+    max-width: 1200px;
+    margin: auto;
+    text-align: justify;
+    border: 1px blue solid;
+}
+
+.lista-temas {
+    border: 1px green solid;
+    margin-top: 20px;
+    margin-left: 20px
+    ;
+}
+
+.lista-unidades {
+    border: 1px lightgreen solid;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #333;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.verde {
+    color: green;
+}
+.morado{
+    color: purple
+}
+.azul{
+    color: lightblue;
+}
+.amarillo{
+    color: yellow;
+}
