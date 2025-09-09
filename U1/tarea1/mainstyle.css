@@ -31,6 +31,8 @@ body {
     margin: auto;
     max-width: 1200px;
     padding-bottom: 3em;
+    /* padding-left: 23%;
+    padding-right: 23%; */
     /* border: 1px black solid; */
 }
 
@@ -73,7 +75,7 @@ body {
 }
 
 .list-green {
-    color: green;
+    color: #699928;
     margin-left: 1em;
 }
 
