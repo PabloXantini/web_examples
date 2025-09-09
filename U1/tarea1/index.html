@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Preformateado</title>
+    <meta name="description" content="Descripcion de la tarea">
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <div class="section">
+        <h1 class="section-title">Las etiquetas y los contenidos</h1>
+        <h2 class="intro-title">Cada elemento HTML está formado por varias partes constitutivas. </h2>
+        <p class="text with-line-space">
+            La primera parte es la etiqueta de apertura. Esta etiqueta empieza con el 
+carácter <span class="inline-code-text">&lt;</span> y se sigue inmediatamente después por el nombre del elemento. 
+Termina con el carácter <span class="inline-code-text">&gt;</span>. El elemento que permite insertar un párrafo de texto 
+se llama <span class="inline-code-text">p</span>, la sintaxis de su etiqueta de apertura es la siguiente: <span class="inline-code-text">&lt;p&gt;</span>. 
+        </p>
+        <p class="text with-line-space">
+            La segunda parte afecta a los contenidos textuales. Es decir, los elementos 
+HTML que contienen texto, como los títulos, párrafos, citas, etc. El texto se 
+escribe de manera normal, sin ninguna etiqueta específica. 
+        </p>
+        <p class="text with-line-space">
+            La mayor parte de los elementos HTML tienen una etiqueta de cierre. La sintaxis 
+retoma el principio de la etiqueta de apertura, pero además con el carácter <span class="inline-code-text">/</span>, que 
+precede al nombre del elemento. Este carácter indica el final del elemento. Si 
+retomamos nuestro ejemplo de párrafo, a continuación se muestra la etiqueta de 
+cierre: <span class="inline-code-text">&lt;/p&gt;</span>.
+        </p>
+        <p class="text with-line-space">
+            Este es un ejemplo completo para el elemento HTML, que inserta un párrafo:
+        </p>
+        <pre class="example"><code><span class="html-tag">&lt;p&gt;</span>El texto de mi párrafo<span class="html-tag">&lt;/p&gt;</span></code></pre>
+        <p class="text with-line-space">
+            Es importante observar que algunos elementos HTML sin contenido textual o sin 
+elementos anidados lógicamente no tienen etiqueta de cierre. Tomemos como 
+ejemplo el elemento <span class="inline-code-text">&lt;hr&gt;</span>, que permite insertar una línea horizontal de 
+separación. No hay contenido textual; por lo tanto, no tenemos etiqueta de 
+cierre. Sucede lo mismo con el elemento <span class="inline-code-text">&lt;img&gt;</span>, que permite insertar una 
+imagen. En este caso, la etiqueta de apertura contiene un autocierre. 
+        </p>
+    </div>
+    <div class="section">
+        <h2 class="section-title">El rol del CSS </h2>
+        <p class="text with-line-space">
+            Recordemos que las <span class="about-css">CSS</span>, <span class="about-css">Cascading Style Sheets</span>, permiten formatear el 
+contenido de los elementos HTML y también se ocupan de la paginación de los 
+sitios web. Por lo tanto, con las CSS tenemos dos objetivos bien definidos: 
+        </p>
+        <ul class="enum-1">
+            <li class="enum-dot-1">
+                El formato que afecta a los textos, por ejemplo, con la aplicación de un 
+color, el cambio de mayúsculas/minúsculas de los caracteres, el 
+resaltado de los párrafos de texto con el formato del interlineado o la 
+indentación de primera línea, etc. 
+            </li>
+            <li class="enum-dot-1">
+                La estructura de la página, que afecta a la disposición de los bloques de 
+contenido HTML de la página, con una barra de navegación, un 
+encabezado, un pie de página, una zona de visualización de contenidos, 
+etc.
+            </li>
+        </ul>
+        <p class="text enum-1 with-line-space"> 
+            Las CSS permiten modificar dinámicamente la estructura de la página 
+según el medio de difusión. Es decir, la estructura de la página va a ser 
+diferente dependiendo de si consulta el sitio web en la pantalla de un 
+ordenador, de una tableta o de un smartphone. 
+        </p>
+        <p class="text with-line-space">
+            En la actualidad y desde hace ya tiempo, es necesario separar las CSS de la 
+estructura del HTML. Por lo tanto, tenemos que ver en este capítulo dónde 
+situar las reglas CSS que forman una hoja de estilo.
+        </p>
+    </div>
+    <div class="section">
+        <h2 class="section-title left">La terminología de las CSS </h2>
+        <p class="text">
+            Hablamos de CSS, estilo, regla, declaración, propiedad y valor. Es conveniente 
+definir esta terminología para utilizar los términos correctos. 
+        </p>
+        <p class="text">
+            <span class="about-css">CSS</span>, acrónimo de <span class="about-css">Cascading Style Sheets</span>, es una tecnología desarrollada por el 
+W3C que permite formatear y estructurar las páginas de los sitios web 
+estructurados en HTML. 
+        </p>
+        <p class="text">
+            Un <span class="bold-ht">estilo</span> es un formato o un elemento de estructuración de página que usa CSS, 
+que se guarda y que, a continuación, se puede aplicar a uno o varios elementos 
+HTML.
+        </p>
+        <p class="text">
+            Una <span class="bold-ht">regla</span> CSS permite la creación de un estilo. Esta regla se crea con una 
+sintaxis específica que utiliza un <span class="bold-ht">selector</span> y una <span class="bold-ht">declaración</span>. Esta última está 
+formada por <span class="bold-ht">propiedades</span> y <span class="bold-ht">valores</span>.
+        </p>
+    </div>
+    <div class="section">
+        <h2 class="section-title-serif">Las	reglas	de	nomenclatura</h2>
+        <p class="text">
+            El nombre de los selectores debe respetar algunas reglas:
+        </p>
+        <ul class="enum-2">
+            <li class="enum-dot-2">
+                No debe empezar por una cifra. 
+            </li>
+            <li class="enum-dot-2">
+                No debe contener espacios, caracteres acentuados ni caracteres 
+                especiales, como: <span class="inline-code-text">+</span>, <span class="inline-code-text">*</span>, <span class="inline-code-text">/</span>, etc. 
+            </li>
+            <li class="enum-dot-2">
+                Puede contener los caracteres guión <span class="inline-code-text">-</span> y guión bajo (<span class="italic">o underscore</span>) <span class="inline-code-text">_</span> en 
+                cualquier posición dentro del nombre. 
+            </li>
+            <li class="enum-dot-2">
+                Es sensible a la diferencia entre mayúsculas y minúsculas. Si el nombre del 
+                selector está en la regla, .<span class="inline-code-text">Mi-Selector</span>, su aplicación en el código HTML 
+                debe ser idéntica: <span class="inline-code-text">class="Mi-Selector"</span>, y no <span class="inline-code-text">class="mi
+                Selector"</span> o <span class="inline-code-text">class="Mi-selector"</span>. 
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <h3 class="concept-title space-1">Que es HTML:</h3>
+        <p class="text">
+            <span class="about-html"> El HTML (Hyper Text Markup Language)</span> es el lenguaje con el que se escriben 
+las páginas web. Es un lenguaje de hipertexto, es decir, un lenguaje que permite 
+escribir texto de forma estructurada, y que está compuesto por etiquetas, que 
+marcan el inicio y el fin de cada elemento del documento. 
+        </p>
+        <ul class="enum-2">
+            <li class="enum-dot-2 underline">
+                Un documento hipertexto no sólo se compone de texto, puede contener 
+                imágenes, sonido, vídeos, etc.,
+            </li>
+            <li class="enum-dot-2 underline">
+                por lo que el resultado puede considerarse como un documento 
+                multimedia. 
+            </li>
+            <li class="enum-dot-2">
+                Los documentos HTML deben tener la extensión html o htm, para que 
+                puedan ser visualizados en los 
+            </li>
+            <li class="enum-dot-2">
+               navegadores o browser.  
+            </li>
+            <li class="enum-dot-2">
+                Organización de una web
+            </li>
+            <li class="enum-dot-2">
+                Para hacer una buena presentación Web lo ideal es crearnos un boceto 
+                inicial de la estructura. Si 
+            </li>
+            <li class="enum-dot-2">
+                hacemos esto, no solo estamos procurando una presentación agradable y 
+                facilitando la tarea de navegar  
+            </li>
+            <li class="enum-dot-2">
+                sino que también nos facilitamos el mantenimiento de futuras revisiones y 
+                modificaciones. 
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <h3 class="concept-title space-2">Los navegadores:</h3>
+        <p class="text">
+            Como hemos dicho, el navegador instalado en el ordenador del usuario es el que 
+interpreta el código HTML de la página que visita por lo que a veces puede 
+ocurrir que dos usuarios visualicen la misma página de forma distinta por que 
+tienen instalados navegadores distintos o incluso versiones distintas del mismo 
+navegador. 
+        </p>
+        <p>
+            Los navegadores tienen que ser compatibles con la última versión HTML para 
+poder interpretar el mayor número posible de etiquetas.
+        </p>
+    </div>
+    <div class="section">
+        <h3 class="concept-title space-2">Editores web:</h3>
+        <p class="text">
+            Un editor es un programa que nos permiten redactar documentos. Hoy en día 
+existen un gran número de
+        </p>
+        <p class="text">
+            editores que permiten crear páginas web sin la necesidad de escribir ni una sola 
+línea de código HTML. 
+        </p>
+        <p class="text">
+            Estos editores disponen de un entorno visual y generan automáticamente el 
+código de las páginas. 
+        </p>
+        <p class="text bold-ht">Algunos de estos editores visuales con los que podrás crear tus páginas web 
+son: </p>
+        <ol class="list-green">
+            <li class="num-1">Visual Code</li>
+            <li class="num-1">Notepad ++ </li>
+            <li class="num-1">Brackets</li>
+            <li class="num-1">Atom</li>
+            <li class="num-1">Otros</li>
+        </ol>
+    </div>
+</body>
+</html>
