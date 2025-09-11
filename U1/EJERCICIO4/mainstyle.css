@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.contenedor-hlink {
+    border: 2px red solid;
+    box-sizing: border-box;
+}
+
+.con-ancho {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px red solid;
+}
+
+.con-margen {
+    padding: 15px;
+}
+
+h1 {
+    border: 1px red solid;
+    width: 400px;
+    /* Este atributo centra la caja que lo contiene */
+    margin: auto;
+    /* Este atrbuto centra el texto (contenido) */
+    text-align: center;
+}
+
+.lista-carreras {
+    border: 1px green solid;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn-oferta {
+    background-color: brown;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.btn-registro {
+    background-color: white;
+    border: 2px brown solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: brown;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.btn-correo {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 30px;
+    padding-left: 15px;
+    padding-top: 12px;
+    display: inline-block;
+}
+
+.btn-telefono {
+    text-decoration: none;
+    background-color: #130860;
+    color: white;
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 40px;
+}
