@@ -29,11 +29,15 @@ body {
 
 .section {
     margin: auto;
-    max-width: 1200px;
+    width: 1200px;
     padding-bottom: 3em;
-    /* padding-left: 23%;
-    padding-right: 23%; */
     /* border: 1px black solid; */
+}
+
+.with-page-margin {
+    padding-left: 315px;
+    padding-right: 315px;
+    min-width: 600px;
 }
 
 .intro-title {
