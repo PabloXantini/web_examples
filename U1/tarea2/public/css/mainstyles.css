@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+.with-margin {
+    margin: auto;
+    width: 940px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .h-line {
+    height: 16px;
+    margin-bottom: 24px;
+    background-color: #cc9900;
+}
+
+.header .logo {
+    height: 120px;
+    margin-bottom: 24px;
+}
+
+.menu {
+    display: flex;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menu {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #800000;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 2em;
+}
+
+.campus-view {
+    text-align: center;
+}
+
+.campus-image {
+    width: inherit;
+    margin-bottom: 2em;
+}
+
+.intro {
+    margin-bottom: 2em;
+    background-color: #F2F2F2;
+    border-radius: 18px;
+    padding: 2.5em 4em;
+    padding-bottom: 2em;    
+}
+
+.section {
+    border: 2px #800000 solid;
+    border-radius: 16px;
+    padding: 1em 4em;
+}
+
+.footer {
+    margin-bottom: 3em;
+    background-color: #800000;
+    border-radius: 16px;
+    padding: 2em 4em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.section-header-container {
+    text-align: center;
+}
+
+.Titulo {
+    margin-bottom: 12px;
+    font-size: 36px;
+}
+
+.Subtitulos {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mark {
+    width: 80px;
+    border: 6px solid;
+    margin-bottom: 36px;
+}
+
+.golden {
+    color: #cc9900;
+}
+
+.cherry-red {
+    color: #800000;
+}
+
+.intro .txt {
+    padding-right: 1em;
+}
+
+.txt {
+    font-size: 16px;
+    /* margin-right: -30px; */
+    margin-bottom: 1em;
+}
+
+.h-text {
+    font-weight: bold;
+}
+
+.mark.cherry-red {
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.image-section {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 16px;
+    border-radius: 36px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#objetivo {
+    margin-bottom: 2em;
+}
+
+#campo-trabajo {
+    margin-bottom: 4em;
+}
+
+#materias {
+    margin-bottom: 1em;
+}
+
+.semestre {
+    font-size: 24px;
+    margin-left: -16px;
+}
+
+.header-semestre {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.header-semestre img {
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.header-semestre h3 {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.list-materia {
+    margin-left: 3.5em;
+    list-style-image: none;
+    list-style-type: disc;
+    margin-bottom: 24px;
+}
+
+.list-materia li {
+    color: black;
+    text-indent: -12px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.list-materia li::marker {
+    font-size: 1.5em;
+}
