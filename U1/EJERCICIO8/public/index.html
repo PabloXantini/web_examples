@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO8</title>
+    <meta name="description" content="Esto es un formulario">
+    <link rel="stylesheet" href="css/mainstyles.css">
+</head>
+<body>
+    <h1 class="with-margin centered">FORMULARIOS</h1>
+    <form action="loquesea.php" method="post" enctype="" class="example-form with-margin">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="input" class="input-1" id="name">
+        <br><br>
+        <input type="text" placeholder="Nombre" name="input2" class="input-2">
+        <input type="text" placeholder="Apellidos" name="input2" class="input-2">
+        <br><br>
+        <button type="submit" class="btn-cherry-red">Enviar</button>
+        <button type="reset" class="btn-golden">Borrar</button>
+    </form>
+    <fieldset>
+        <legend>Acceso a la plataforma</legend>
+        <form action="" class="example-form-2">
+            <input type="text" name="user" placeholder="Usuario" class="input-2">
+            <br><br>
+            <input type="password" name="pswd" placeholder="Constraseña" class="input-2">
+            <br><br>
+            <button type="submit" class="btn-cherry-red">Login</button>
+        </form>    
+        <br><br>
+    </fieldset>
+    <form action="" class="with-margin">
+        <input type="email" name="email" placeholder="Email" class="input-2" required>
+        <br><br>
+        <input type="number" min="1" pattern="[0-9]*" name="edad" placeholder="Edad" class="input-2">
+        <br><br>
+        <input type="tel" max-length="10" pattern="[0-9](10)" name="telephone" placeholder="Tel. Ejem:9993377789" class="input-2">
+        <br><br>
+        <input type="checkbox" value="HTML y CSS" name="check-1" id="html"><label class="check" for="html">Curso de HTML y CSS</label>
+        <br>
+        <input type="checkbox" value="PHP" name="check-2" id="php"><label class="check" for="php">Curso de PHP</label>
+        <br>
+        <input type="checkbox" value="MYSQL" name="check-3" id="mysql"><label class="check" for="mysql">Curso de MYSQL</label>
+        <br><br>
+        <input type="radio" value="Matutino" name="dot-1" id="mat"><label class="check" for="mat">Matutino</label>
+        <br>
+        <input type="radio" value="Vespertino" name="dot-1" id="ves"><label class="check" for="ves">Vespertino</label>
+        <br>
+        <input type="radio" value="Sabatino" name="dot-1" id="sab"><label class="check" for="sab">Sabatino</label>
+        <br><br>
+        <button type="submit" class="btn-cherry-red">Enviar</button>
+    </form>
+</body>
+</html>
