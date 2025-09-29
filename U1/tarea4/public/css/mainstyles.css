@@ -176,6 +176,14 @@ span.greater+.megas{
     justify-content: center;
 }
 
+.bg-white{
+    background-color: white;
+}
+
+.bg-lgray{
+    background-color: #f4f4f4;
+}
+
 .news-video{
     height: 600px;
     width: 1008px;
