@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+.header-menu{
+    display: flex;
+    height: 60px;
+    background-color: #2463a9;
+    border-bottom: 10px #1cace7 solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-margin{
+    width: 1100px;
+    margin: auto;
+}
+
+.intro{
+    padding: 100px 150px;
+    background: url("../res/media/img/fondo_slide.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.carousel{
+    display: flex;
+    height: 300px;
+    margin-bottom: 12px;
+    align-items: center;
+    background-color: #ececec;
+}
+
+.video-container{
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #2463a9;
+}
+
+.logo{
+    margin-bottom: 48px;
+}
+
+.text{
+    margin-bottom: 48px;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-bar{
+    display: flex;
+    width: 600px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-main{
+    padding: 12px 24px;
+    background-color: #ff6500;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.btn-menu{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.table-telcel{
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;
+    box-shadow:
+    -4px 0 #1cace7,
+    4px 0 #1cace7, 
+    -4px 4px #1cace7, 
+    4px 4px #1cace7;
+}
+
+.table-telcel colgroup .col-1{
+    width: 100px;
+}
+.table-telcel colgroup .col-2{
+    width: 100px;
+}
+.table-telcel colgroup .col-3{
+    width: 170px;
+}
+.table-telcel colgroup .col-4{
+    width: 180px;
+}
+.table-telcel colgroup .col-5{
+    width: 200px;
+}
+.table-telcel colgroup .col-6{
+    width: 150px;
+}
+.table-telcel colgroup .col-7{
+    width: 140px;
+}
+
+.table-telcel th{
+    padding: 0 12px;
+    background-color: #1cace7;
+    border: 4px #ececec solid;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.table-telcel td{
+    padding: 8px;
+    border: 4px #ececec solid;
+    font-size: 20px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    color: #2463a9;
+    font-weight: 600;
+}
+
+td.great, span.great{
+    font-family: 'Verdana', sans-serif;
+    font-weight: 800;
+}
+
+span.greater{
+    font-family: 'Verdana', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+span.greater+.megas{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.money{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.megas{
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 80%;
+    font-weight: 600;
+}
+
+.container-cover{
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+}
+.container-social{
+    display: flex;
+    justify-content: center;
+}
+
+.news-video{
+    height: 600px;
+    width: 1008px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.h-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.img-promo{
+    height: 240px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo-container{
+    padding: 16px;
+}
+
+.color-telcel{
+    color: #1cace7;
+}
+
+.bold{
+    font-weight: bold;
+}
