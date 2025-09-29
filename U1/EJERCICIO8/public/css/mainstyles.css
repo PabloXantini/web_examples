@@ -43,6 +43,20 @@ body{
     border: 0;
     box-shadow: 0 0 10px #d4d4d4;
 }
+.input-3{
+    background-color: #ccc;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 40px;
+}
+
+.input-4{
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}
 .btn-cherry-red{
     padding: 10px 30px;
     border-radius: 40px;

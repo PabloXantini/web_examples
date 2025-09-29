@@ -30,7 +30,7 @@
         </form>    
         <br><br>
     </fieldset>
-    <form action="" class="with-margin">
+    <form action="" method="" enctype="multipart/form-data" class="with-margin">
         <input type="email" name="email" placeholder="Email" class="input-2" required>
         <br><br>
         <input type="number" min="1" pattern="[0-9]*" name="edad" placeholder="Edad" class="input-2">
@@ -41,13 +41,27 @@
         <br>
         <input type="checkbox" value="PHP" name="check-2" id="php"><label class="check" for="php">Curso de PHP</label>
         <br>
-        <input type="checkbox" value="MYSQL" name="check-3" id="mysql"><label class="check" for="mysql">Curso de MYSQL</label>
+        <input checked type="checkbox" value="MYSQL" name="check-3" id="mysql"><label class="check" for="mysql">Curso de MYSQL</label>
         <br><br>
-        <input type="radio" value="Matutino" name="dot-1" id="mat"><label class="check" for="mat">Matutino</label>
+        <input checked type="radio" value="Matutino" name="dot-1" id="mat"><label class="check" for="mat">Matutino</label>
         <br>
         <input type="radio" value="Vespertino" name="dot-1" id="ves"><label class="check" for="ves">Vespertino</label>
         <br>
         <input type="radio" value="Sabatino" name="dot-1" id="sab"><label class="check" for="sab">Sabatino</label>
+        <br><br>
+        <input type="file" class="input-3">
+        <br><br>
+        <select name="unidades" size="" class="input-3">
+            <option value="">Escoge tu unidad</option>
+            <option value="1">Unidad 1</option>
+            <option value="2">Unidad 2</option>
+            <option value="3">Unidad 3</option>
+            <option value="4">PROYECTO FINAL</option>
+        </select>
+        <br><br>
+        <textarea maxlength="400" placeholder="Escribe tu comentario" name="comentarios" class="input-4">
+
+        </textarea>
         <br><br>
         <button type="submit" class="btn-cherry-red">Enviar</button>
     </form>
