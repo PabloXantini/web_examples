@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITMérida</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/mainstyles.css">
+</head>
+<body>
+    <div class="header-container">
+        <a href="http://www.merida.tecnm.mx">
+            <img id="logo-tec" src="res/media/img/logo_tec.png" alt="">
+        </a>
+    </div>
+    <div class="branding-container">
+        <h1 class="title">Te OFRECEMOS una amplia variedad de <span class="ht-green">SEGUROS DE DIFERENTES MARCAS:</span></h1>
+        <div class="branding-img-container">
+            <div class="brand-col1">
+                <img src="res/media/img/segurosmonterrey.jpg" alt="Seguros Monterrey Logo">
+                <img src="res/media/img/segurosmultiva.jpg" alt="Seguros Multiva Logo">
+            </div>
+            <div class="brand-col2">
+                <img src="res/media/img/logometlife.jpg" alt="MetLife Logo">
+                <img src="res/media/img/allianz.jpg" alt="Allianz Logo">
+            </div>
+            <div class="brand-col3">
+                <img src="res/media/img/logoqualitas.jpg" alt="Quálitas Logo">
+                <img src="res/media/img/aig.jpg" alt="AIG Logo">
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <form action="" method="post">
+            <h2 class="title-form">¿Estás interesado en algún tipo de seguro?</h2>
+            <p class="ins-text">Déjanos tus datos y contactaremos contigo</p>
+            <p class="ins-text">(Campos obligatorios*)</p>
+            <div class="data-field-container">
+                <input type="text" name="nombre" placeholder="*Nombre" class="data-field" required><br>
+                <input type="text" name="apellido" placeholder="Apellido" class="data-field"><br>
+                <input type="tel" name="telefono" placeholder="Telefono" class="data-field"><br>
+                <select name="seguros" class="data-field" required>
+                    <option value="">*Escoge tu seguro</option>
+                    <option value="Allianz">Allianz</option>
+                    <option value="Seguros Monterrey">Seguros Monterrey</option>
+                    <option value="AIG">AIG</option>
+                    <option value="Qualitas">Qualitas</option>
+                    <option value="Multiva Seguros">Multiva Seguros</option>
+                    <option value="MetLife">MetLife</option>
+                </select><br>
+                <textarea name="comentarios" placeholder="*Comentarios" class="data-field" required></textarea><br>
+            </div>
+            <div class="cond-use-container">
+                <input type="checkbox" name="cond-uso" id="confirm" required><label for="confirm">He leído y acepto las <span><a href="#" class="ht-cherry-red bold">condiciones legales</a></span>. 
+            </label>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn-form">SOLICITAR INFORMACION</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer-container">
+        <h3 class="footer-text">Pablo Enrique Santini Buenfil</h3>
+        <h3 class="footer-text">Programación Web</h3>
+        <h3 class="footer-text">Séptimo Semestre</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #cdcdcd;
+    font-family: Arial;
+}
+.header-container{
+    padding: 16px;
+    border-top: 16px #cc9900 solid;
+    background-color: #800000;
+    text-align: center;
+}
+#logo-tec{
+    width: 80px;
+}
+.branding-container{
+    margin: auto;
+    width: 900px;
+    padding: 48px;
+}
+.branding-img-container{
+    display: flex;
+    width: 550px;
+    margin: auto;
+}
+.form-container{
+    width: 850px;
+    margin: auto;
+    margin-bottom: 48px;
+    padding: 48px;
+    background-color: #eee;
+    border: 4px #b1b1b1 solid;
+    border-radius: 20px;
+}
+.footer-container{
+    padding-top: 48px;
+    padding-bottom: 36px;
+    background-color: #800000;
+    text-align: center;
+}
+.footer-text{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+.data-field-container{
+    margin-top: 24px;
+    text-align: center;
+}
+.data-field{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 12px;
+    padding: 10px 20px;
+    border: 0;
+    border: 1px #b1b1b1 solid;
+    box-shadow: 0 0 2px;
+    color: #b1b1b1;
+}
+textarea.data-field{
+    height: 150px;
+    resize: none;
+    font-family: Arial;
+}
+.cond-use-container{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 16px;
+}
+.button-container{
+    text-align: center;
+}
+.btn-form{
+    width: 300px;
+    margin: auto;
+    padding: 10px 20px;
+    background: linear-gradient(#eecc00, #cc9900);
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+.title{
+    margin-bottom: 28px;
+    font-family: Impact, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+.title-form{
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+.ins-text{
+    text-align: center;
+    font-weight: bold;
+    color: #b1b1b1;
+}
+.ht-green{
+    color: #619b12;
+}
+.ht-cherry-red{
+    color: #800000;
+}
+.bold{
+    font-weight: bold;
+}
