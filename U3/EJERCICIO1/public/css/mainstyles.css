@@ -3,7 +3,127 @@
     margin: 0;
     padding: 0;
 }
-
 body {
+    font-size: 20px;
     font-family: Helvetica;
+    line-height: 28px;
+}
+div{
+    /* border: 1px black solid; */
+}
+.m-width{
+    max-width: 1200px;
+    margin: auto;
+}
+.w-margin{
+    padding: 15px;
+}
+.centered{
+    text-align: center;
+}
+.f-container{
+    box-sizing: border-box;
+    width: 1450px;
+    margin: auto;
+    text-align: center;
+}
+.background-container{
+    background-image: url("../media/img/fondo_hexagonos.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+.menu-container{
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+    background-color: #ececec;
+    border-radius: 15px;
+    text-align: center;
+}
+.menu-container a {
+    display: inline-block;
+    margin-left: 50px;
+    border: 1px black solid;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.menu-container a:first-child{
+    margin-left: 0;
+}
+.menu-container a:nth-child(2){
+    color:blue
+}
+.menu-container a:hover{
+    color: darkblue;
+    background-color: lightgrey;
+    scale: 110%;
+    transition: ease-in-out 0.2s;
+}
+.container-1{
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+}
+.container-2{
+    display: inline-block;
+    width: 800px;
+    vertical-align: top;
+}
+.info-hackaton-container{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.info-event{
+    display: inline-block;
+    width: 550px;
+    vertical-align: top;
+}
+.info-event h2{
+    font-size: 25px;
+    line-height: 30px;
+}
+.event-foto{
+    display: inline-block;
+    width: 550px;
+    vertical-align: top;
+}
+.icon-container img:first-child{
+    margin-right: 30px;
+}
+.basis-container{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.blue-line{
+    width: 60px;
+    height: 15px;
+    background-color: #a9cefa;
+}
+.basis-foto{
+    display: inline-block;
+    width: 600px;
+    vertical-align: middle;
+}
+.basis-foto img{
+    width: 600px;
+}
+.info-basis{
+    display: inline-block;
+    width: 580px;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.basis-list li{
+    padding: 10px;
+    border-bottom: 1px blue dotted;
+    list-style: none;
+}
+.golden{
+    color: #cc9900;
 }
