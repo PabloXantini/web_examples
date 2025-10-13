@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica;
+}
+.contact-header{
+    padding: 4px;
+    background-color: #fafafa;
+    border-top: 1px #ededed solid;
+    border-bottom: 1px #ededed solid;
+    text-align: center;
+}
+.social-contact-menu{
+    display: inline-block;
+    width: 48%;
+    height: 29px;
+    text-align: left;
+    vertical-align: middle;
+}
+.tel-container{
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+.menu-header{
+    padding: 24px 10px;
+    text-align: center;
+}
+.logo-container{
+    display: inline-block;
+    width: 28%;
+    vertical-align: middle;
+}
+.menu-container{
+    display: inline-block;
+    width: 68%;
+    text-align: right;
+}
+.btn{
+    display: inline-block;
+    height: 58px;
+    padding: 0px 10px;
+    color: #6c6c6c;
+    font-family: Tahoma;
+    font-weight: 400;
+    text-decoration: none;
+    align-content: center;
+    vertical-align: middle;
+}
+.start {
+    padding: 0px 20px;
+    background-color: #00B7F1;
+    color: white;
+}
+.free-trial{
+    padding: 0 20px;
+    border-radius: 40px;
+}
+.show-more{
+    width: 150px;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 40px;
+    font-family: Helvetica;
+    font-size: 18px;
+    text-align: center;
+}
+.intro-container{
+    background-image: url("../res/media/foto1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 52px;
+    padding-top: 96px;
+}
+.info-intro-container{
+    width: 900px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.intro-more-info-container{
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+.intro-title{
+    width: 700px;
+    margin: auto;
+    color: #00DBA1;
+    font-family: Tahoma;
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 72px;
+}
+.intro-text{
+    color: white;
+    font-family: Tahoma;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 28px;
+}
+.intro-fixed{
+    width: 220px;
+    background-color: white;
+    border-radius: 40px;
+}
+.info-panel-container{
+    font-size: 0;
+    text-align: center;
+}
+.info-panel-container div:first-child{
+    margin-right: 2%;
+}
+.info-panel-container div:last-child{
+    margin-left: 2%;
+}
+.info-container{
+    display: inline-block;
+    width: 32%;
+    padding: 24px;
+    padding-top: 52px;
+    padding-bottom: 40px;
+    background-color: #00B7F1;
+    vertical-align: top;
+}
+.info-content{
+    height: 250px;
+}
+.info-title{
+    width: 200px;
+    margin: auto;
+    color: white;
+    font-family: Impact;
+    font-size: 30px;
+    font-weight: normal;
+}
+.info-text{
+    margin-top: 26px;
+    margin-bottom: 26px;
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+    hyphens: auto;
+}
+.about-info-container{
+    font-size: 0;
+    text-align: center;
+}
+.about-info{
+    display: inline-block;
+    width: 50%;
+    padding: 52px;
+    padding-right: 64px;
+    text-align: left;
+}
+.about-content{
+    margin-bottom: 24px;
+}
+.about-title{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.about-text{
+    margin-bottom: 16px;
+    font-size: 19px;
+    hyphens: auto;
+}
+.about-image-container{
+    display: inline-block;
+    width: 50%;
+    aspect-ratio: 4/3;
+    background-image: url("../res/media/foto2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: top;
+}
+.footer{
+    padding: 24px;
+    background-color: #00B7F1;
+    text-align: center;
+}
+.footer h3{
+    color: white;
+    font-size: 28px;
+    font-weight: normal;
+}
+.telephone{
+    text-align: right;
+    font-family: Tahoma;
+    font-weight: normal;
+    font-size: 24px;
+}
+.social-link{
+    display: inline-block;
+    height: 100%;
+    color: #afafaf;
+    font-family: 'Lucida Grande', sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+    align-content: center;
+}
+.logo-placeholder{
+    color: #00B7F1;
+    font-family: Tahoma;
+    font-size: 42px;
+    font-weight: normal;
+    text-align: left;
+}
+.blued{
+    background-color: #00B7F1;
+    color: white;
+}
+.greened{
+    background-color: #01D6A6;
+    color: white;
+}
