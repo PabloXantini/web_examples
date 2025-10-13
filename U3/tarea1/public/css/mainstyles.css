@@ -121,7 +121,7 @@ body{
 .info-container{
     display: inline-block;
     width: 32%;
-    padding: 24px;
+    padding: 17px;
     padding-top: 52px;
     padding-bottom: 40px;
     background-color: #00B7F1;
@@ -143,7 +143,7 @@ body{
     margin-bottom: 26px;
     color: white;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 18px;
     hyphens: auto;
 }
 .about-info-container{
@@ -154,7 +154,7 @@ body{
     display: inline-block;
     width: 50%;
     padding: 52px;
-    padding-right: 64px;
+    /* padding-right: 64px; */
     text-align: left;
 }
 .about-content{
@@ -167,7 +167,7 @@ body{
 }
 .about-text{
     margin-bottom: 16px;
-    font-size: 19px;
+    font-size: 17px;
     hyphens: auto;
 }
 .about-image-container{
