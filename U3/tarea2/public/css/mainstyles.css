@@ -3,3 +3,220 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: Arial, sans-serif;
+    min-width: 1440px;
+}
+
+.moz-content-container{
+    width: 1200px;
+    margin: auto;
+}
+.moz-header{
+    padding: 20px;
+    border-bottom: 3px #d2d2d2 solid;
+}
+.moz-nav-container{
+    display: inline-block;
+    text-align: left;
+    width: 70%
+}
+.moz-logo-container{
+    display: inline-block;
+    width: 18%;
+}
+.moz-logo{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+#moz-logo{
+    width: 100%;
+}
+.moz-nav-menu{
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+.nav-button{
+    margin-left: 30px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.moz-download-container{
+    display: inline-block;
+    width: 29%;
+    text-align: right;
+}
+.nav-download-firefox-button{
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px #3201fc solid;
+    border-radius: 10px;
+    color: #3201fc;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.moz-intro-info-container{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+.moz-intro-image-container{
+    display: inline-block;
+    width: 39%;
+}
+#firefox-screenshot{
+    width: 100%;
+}
+.moz-banner-container{
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.moz-banner-image-container{
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+}
+.moz-banner-info-container{
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+}
+.moz-summary-container{
+    text-align: center;
+}
+.moz-summary-container:last-child{
+    border-left: #f7f7f7;
+}
+.moz-summary-section-container{
+    display: inline-block;
+    width: 48%;
+    padding: 40px;
+    text-align: left;
+    vertical-align: top;
+}
+.moz-feats li a{
+    color: #3201fc;
+    font-weight: bold;
+}
+.mos-services-container{
+    padding-bottom: 36px;
+}
+.moz-section-container{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+}
+.moz-section-container .moz-info{
+    width: 65%;
+    margin: auto;
+}
+.moz-subscribe-container{
+    text-align: center;
+}
+.moz-sub-image-container{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.moz-sub-form-container{
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    vertical-align: top;
+}
+.form-content-container{
+    width: 60%;
+}
+.form-instruction{
+    font-size: 14px;
+    font-weight: bold;
+}
+#form-email-entry{
+    width: 100%;
+    padding: 7px;
+    border: 1px #aaaaaa solid;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+.subscribe{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+#image-newsletter{
+    width: 100%;
+}
+.moz-footer{
+    padding: 40px;
+    background-color: black;
+    text-align: center;
+}
+.firefox-logo-container{
+    width: 20%;
+    margin-bottom: 10px;
+}
+#firefox-logo{
+    width: 100%;
+}
+.moz-info{
+    margin-bottom: 24px;
+}
+.moz-title{
+    color: #333;
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+.moz-title-banner{
+    color:#333;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+.moz-title-summary{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.moz-title-section{
+    color: black;
+    font-size: 32px;
+    text-decoration: underline;
+    margin-bottom: 24px;
+}
+.moz-text{
+    color: #333;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+.moz-button-download{
+    width: 200px;
+    text-align: center;
+}
+.moz-button-container{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.download{
+    background-color: #3201fc;
+}
+.download a{
+    color: white;
+    text-decoration: none;
+}
+.moz-btn-footer{
+    text-align: center;
+    color: #767676;
+    padding: 5px;
+    font-size: 12px;
+}
+.no-line{
+    text-decoration: none;
+}
