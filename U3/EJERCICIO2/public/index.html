@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <meta name="description" content="Un simple formulario">
+    <link rel="stylesheet" href="css/mainstyles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="header-container">
+            <h1 class="title">FORMULARIO - CONTACTANOS</h1>
+        </div>
+        <div class="form-container">
+            <div class="field-container">
+                <p>Nombre:</p>
+                <p>Email:</p>
+                <p>Teléfono:</p>
+                <p>Fecha:</p>
+                <p>Comentarios:</p>
+            </div>
+            <div class="input-container">
+                <form action="some.html" method="get" enctype="text/plain" id="form-comments">
+                    <input type="text" name="Name" id="i-name" required>
+                    <input type="email" name="Email" id="i-email">
+                    <input type="tel" maxlength="10" pattern="[0-9]+" name="Telephone" id="i-tel">
+                    <input type="date" name="Date" id="i-date">
+                    <textarea name="Comments" id="i-comments"></textarea>
+                    <button class="btn-submit" type="button" id="b-submit">Enviar comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    //Function of form validation
+    $("#b-submit").click(function(){
+        if($("#i-name").val().trim()==""){
+            alert("Por favor, escribe tu nombre");
+            $("#i-name").focus();
+            return 0;
+        }
+        if(!$("#i-email")[0].checkValidity()||$("#i-email").val().trim()==""){
+            alert("Por favor, escribe correctamente tu email");
+            $("#i-email").focus();
+            return 0;
+        }
+        if(!$("#i-tel")[0].checkValidity()||$("#i-tel").val().trim()==""){
+            alert("Por favor, escribe correctamente tu teléfono: Solo se permiten numeros de 0 al 9");
+            $("#i-tel").focus();
+            return 0;
+        }
+        //IF ALL OK
+        document.getElementById("form-comments").submit();
+    });
+</script>
