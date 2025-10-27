@@ -5,33 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Sagrada Familia</title>
     <meta name="description" content="Dejanos Conocerte">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mainstyles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
     <div class="header">
         <div class="logo-container">
-            <img src="res/media/img/logo_cabecera.png" alt="Logo de Caja La Sagrada Familia">
+            <img id="logo" src="res/media/img/logo_cabecera.png" alt="Logo de Caja La Sagrada Familia">
         </div>
     </div>
     <div class="upper-container">
         <div class="title-container">
-            <h1>Déjanos conocerte</h1>
-            <hr>
+            <h1 class="title">Déjanos conocerte</h1>
+            <hr class="title-hr">
         </div>
     </div>
     <div class="main-container">
         <div class="inner-container">
-            <h2>¡ Compártenos tu información !</h2>
-            <h3>Dejanos tus datos personales y nosotros nos comunicaremos contigo lo más pronto posible.</h3>
+            <h2 class="form-title">¡ Compártenos tu información !</h2>
+            <h3 class="form-instructions">Dejanos tus datos personales y nosotros nos comunicaremos contigo lo más pronto posible.</h3>
             <div class="form-layout-container">
-                <div class="form-field-container"></div>
-                <div class="form-field-container"></div>
+                <form action="some.html" method="get" enctype="text/plain" id="about-form">
+                    <div class="form-field-container">
+                        <input type="text" name="CName" placeholder="Nombre Completo *" id="i-cname" required>
+                        <input type="email" name="Email" placeholder="Correo Electrónico *" id="i-email" required>
+                        <input type="tel" name="Telephone" pattern="[0-9]+" maxlength="10" placeholder="Celular *" id="i-tel" required>
+                        <input type="text" name="City" placeholder="Ciudad" id="i-city">                        <input type="text" name="Town" placeholder="Localidad" id="i-town">
+                    </div>
+                    <div class="form-field-container">
+                        <input type="text" name="State" placeholder="Estado" id="i-state">
+                        <input type="text" name="Colony" placeholder="Colonia" id="i-colony">
+                        <select name="Focus-Areas" id="i-f-areas">
+                            <option value="None">Elige tu área de interés</option>
+                            <option value="1">Cajas</option>
+                            <option value="2">Servicios</option>
+                            <option value="3">Asesoramiento Financiero</option>
+                            <option value="4">Gestoría y Cobranza</option>
+                            <option value="5">Crédito</option>
+                            <option value="6">Jurídico</option>
+                            <option value="7">Archivo</option>
+                            <option value="8">Mercadotécnica</option>
+                            <option value="9">Diligencias</option>
+                            <option value="10">Compras</option>
+                            <option value="11">Intendencia</option>
+                            <option value="12">Auditoría</option>
+                            <option value="13">Capital Humano</option>
+                            <option value="14">Mantenimiento</option>
+                            <option value="15">Sistemas</option>
+                            <option value="16">Contabilidad</option>
+                            <option value="17">Administración</option>
+                        </select>
+                        <div class="checkbox-persontype-container">
+                            <input type="radio" name="PersonType" id="i-p-person" value="Fisica" checked><label for="i-p-person">Persona Física</label>
+                            <input type="radio" name="PersonType" id="i-m-person" value="Moral"><label for="i-m-person">Persona Moral</label>
+                        </div>
+                    </div>
+                    <button type="button" id="b-submit">Enviar</button>
+                </form>
             </div>
-            <button type="submit"></button>
         </div>
     </div>
     <div class="footer">
-
+        <h4 class="title-footer">Pablo Enrique Santini Buenfil</h4>
+        <h4 class="title-footer">7SA</h4>
+        <h4 class="title-footer">Programación Web</h4>
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+    //Function of form validation
+    $("#b-submit").click(function(){
+        if(fieldEmpty("i-cname")){
+            alert("Por favor, escribe tu nombre");
+            focusInput("i-cname");
+            return 0;
+        }
+        if(fieldEmpty("i-email")){
+            alert("Por favor, escribe tu correo")
+            focusInput("i-email");
+            return 0;
+        }
+        if(validMatch("i-email")){
+            alert("Por favor, escribe correctamente tu email");
+            focusInput("i-email");
+            return 0;
+        }
+        if(fieldEmpty("i-tel")&&isValidTel()){
+            alert("Por favor, escriba su teléfono de contacto :)");
+            focusInput("i-tel");
+            return 0;
+        }
+        if(validMatch("i-tel")){
+            alert("Por favor, escriba correctamente su teléfono :(");
+            focusInput("i-tel");
+            return 0;
+        }
+        if(!isValidOption("i-f-areas")){
+            alert("Error: Entrada de opciones no valida, intente otra vez");
+            focusInput("i-f-areas");
+            return 0;
+        }
+        if(fieldEmpty("i-p-person")&&validateOption("Fisica","Moral")||fieldEmpty("i-m-person")&&validateOption("Fisica,")){
+            alert("Error: Entrada de opciones no valida, intente otra vez");
+            focusInput("i-p-person");
+            return;
+        }
+        //All ok
+        document.getElementById("about-form");
+        alert("Sus datos se han enviado con éxito");
+    });
+    const maxOption = 17;
+    function fieldEmpty(tag){
+        return $("#"+tag).val().trim()==="";
+    }
+    function validMatch(tag){
+        return !$("#"+tag)[0].checkValidity();
+    }
+    function isValidTel(tag){
+        let value = $("#"+tag).val().trim();
+        if(value.length!=10) return false;
+        return true;
+    }
+    function isValidOption(tag){
+        var optionID = $("#"+tag).val().trim();
+        optionID = parseInt(optionID);
+        if(isNaN(optionID)){
+            return false;
+        }else if (optionID<maxOption){
+            return true;
+        }
+    }
+    function validateOption(tag, options){
+        let value = $("#"+tag).val().trim();
+        options.array.forEach(element => {
+            if(element == value){
+                return true;
+            }
+        });
+        return false;
+    }
+    function focusInput(tag){
+        $("#"+tag).focus();
+    }
+</script>

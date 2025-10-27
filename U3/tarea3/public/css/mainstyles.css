@@ -3,3 +3,119 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: Helvetica;
+}
+.header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 20px #99671A solid;
+    background-color: #041237;
+    text-align: center;
+}
+#logo{
+    width: 150px;
+}
+.upper-container{
+    padding: 4px;
+    background-color: #F0F3F8;
+    text-align: center;
+}
+.title-container{
+    text-align: center;
+}
+.title{
+    padding: 5px;
+    color: #00739A;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.title-hr{
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background-color: #D60102;
+}
+.main-container{
+    padding: 20px;
+}
+.inner-container{
+    padding: 5px;
+    border: #00739A 2px solid;
+    border-radius: 20px;
+    text-align: center;
+}
+.inner-container form{
+    text-align: center;
+}
+.form-title{
+    color:#F79100;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-instructions{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.form-layout-container{
+    font-size: 0;
+    text-align: justify;   
+}
+.form-field-container{
+    display: inline-block;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+.form-field-container input, select{
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 8px;
+    border: 1px #808080 solid;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+.form-field-container select{
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 3px;
+}
+.checkbox-persontype-container{
+    text-align: left;
+}
+.checkbox-persontype-container input{
+    display: inline-block;
+    width: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.checkbox-persontype-container label{
+    font-size: 14px;
+}
+.form-layout-container button{
+    display: block;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 650px;
+    padding: 10px;
+    background-color: #D60102;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.footer{
+    background-color: #041237;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.title-footer{
+    color:white;
+    font-weight: bolder;
+    font-size: 34px;
+}
