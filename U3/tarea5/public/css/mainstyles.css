@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial;
+    font-size: 16px;
+}
+.header{
+    padding: 10px;
+    padding-bottom: 25px;
+    background-color: #fff9f1;
+    border-top: 10px #ff3281 solid;
+}
+.head{
+    text-align: justify;
+}
+.logo-container{
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+.social-media-container{
+    display: inline-block;
+    width: 19%;
+    vertical-align: middle;
+    text-align: center;
+}
+.smicon-container{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu{
+    text-align: center;
+    border: 3px black solid;
+    font-size: 16px;
+}
+.btn-menu{
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 10px;
+    font-weight: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.promo{
+    background-image: url("../res/media/img/fondopiedras.jpg");
+}
+.promo-container{
+    margin: auto;
+    width: 1200px;
+}
+.p-info{
+    margin: auto;
+    padding: 100px 10px;
+    width: 600px;
+    text-align: center;
+}
+.main-title{
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 32px;
+    color: white;
+}
+.subtitle-1{
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+.p-button-container{
+    margin-top: 50px;
+}
+.main-container-1{
+    margin: auto;
+    width: 1200px;
+    font-size: 0;
+}
+.btn-action{
+    display: inline-block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: white;
+}
+.btn-action:nth-child(1){
+    margin-right: 20px;
+}
+.btn-action#more{
+    background-color: #ff3281;
+}
+.btn-action#video{
+    border: 1px #ff3281 solid;
+}
+.section{
+    padding: 15px;
+}
+.section-2{
+    padding: 15px;
+    background-color: #fff9f1;
+}
+.footer{
+    padding: 15px;
+    background-color: #fff9f1;
+    border-bottom: 10px #ff3281 solid;
+}
+.footer-l{
+    text-align: center;
+}
+.footer-logo-container{
+    display: inline-block;
+    vertical-align: middle;
+}
+.homework-info{
+    display: inline-block;
+    width: 80%;
+    text-align: right;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 18px;
+    color:#ff3281;
+}
+.news-container{
+    display: inline-block;
+    padding: 30px;
+    width: 50%;
+    vertical-align: top;
+}
+.info-l1{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+.info-l2{
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    vertical-align: top;
+}
+.info-l3{
+    display: inline-block;
+    padding: 30px;
+    width: 50%;
+    vertical-align: top;
+}
+.topic-l2{
+    padding-bottom: 22px;
+}
+.news-form-container{
+    padding: 14px;
+    border: 4px #ff3281 solid;
+    border-radius: 4px;
+}
+input#i-email{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: large;
+}
+.news-submit{
+    margin-left: 5px;
+    padding: 15px 60px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.image-l1{
+    display: inline-block;
+    margin-left: 10%;
+    width: 40%;
+}
+.image-l2{
+    display: inline-block;
+    width: 50%;
+}
+.image-l2 #perfume{
+    width: 100%;
+    border-radius: 20px;
+}
+.big-section-title{
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 36px;
+}
+.title-1{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.title-2{
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.text-1{
+    font-size: 16px;
+    line-height: 2em;
+}
+.text-2{
+    font-size: 14px;
+    color: #5A5750;
+    line-height: 1.5em;
+}
+.text-3{
+    margin-bottom: 20px;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+.centered{
+    text-align: center;
+}
+.magent{
+    font-weight: bold;
+    color:#ff3281;
+}
+.video{
+    margin-top: 55px;
+}
+#debut-video{
+    width: 100%;
+    border-radius: 20px;
+}
