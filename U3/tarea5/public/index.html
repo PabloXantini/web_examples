@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spa Salon</title>
     <meta name="description" content="Esta es una página web">
     <link rel="stylesheet" href="css/mainstyles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -101,7 +101,7 @@
                 <p class="text-3"><span class="magent">CORREO: </span>info@spasalon.com</p>
                 <div class="news-form-container">
                     <h4 class="title-2">Tu dirección de correo electrónico</h4>
-                    <form action="some.html" method="get" enctype="text/plain">
+                    <form action="some.html" method="get" enctype="text/plain" id="news-form">
                         <input type="email" name="EMAIL" id="i-email" placeholder="* tunombre@example.com" required>
                         <button class="news-submit" type="button" id="b-submit">Enviar</button>
                     </form>
@@ -133,7 +133,7 @@
     $("#b-submit").click(function(){
         if($("#i-email").val().trim()==""){
             alert("Al parecer el correo está vacío");
-            $("#i-name").focus();
+            $("#i-email").focus();
             return 0;
         }
         if(!$("#i-email")[0].checkValidity()||$("#i-email").val().trim()==""){
@@ -141,6 +141,6 @@
             $("#i-email").focus();
             return 0;
         }
-        document.getElementById("b-submit").submit();
+        document.getElementById("news-form").submit();
     });
 </script>
